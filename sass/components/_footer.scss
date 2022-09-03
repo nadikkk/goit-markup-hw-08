@@ -1,0 +1,132 @@
+.footer {
+  background-color: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
+   .logo {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+}
+.footer-box {
+  display: flex;
+  align-items: baseline;
+}
+.footer-address {
+  margin-right: 70px;
+}
+
+.footer-logo {
+  color: $accent-second-color;
+}
+.address-list {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+}
+.footer-address .link {
+  display: inline-block;
+  transition: color $duration $timing-function;
+  &:hover,
+  &:focus {
+  color: $accent-color;
+}
+}
+.address-item {
+  min-width: 231px;
+  &:not(:first-child) {
+  margin-top: 9px;
+}
+}
+
+.footer-nav-link {
+  color: $accent-second-color;
+}
+.footer-nav {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-soc-list {
+  display: flex;
+  column-gap: 10px;
+  min-width: 206px;
+}
+.footer-soc-text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: $accent-second-color;
+  margin-bottom: 20px;
+}
+.footer-soc-item {
+  width: calc((100% - 30px) / 4);
+  min-height: 44px;
+}
+.footer-soc-link {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: $accent-second-color;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: background-color $duration $timing-function;
+  &:hover,
+  &:focus {
+  background-color: $accent-color;
+}
+}
+
+.footer-form-wrap {
+  margin-left: 93px;
+  width: 570px;
+  height: 86px;
+}
+.footer-form {
+  display: flex;
+  width: 100%;
+  height: 50px;
+  gap: 12px;
+}
+.footer-form-input {
+  width: 358px;
+  height: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15)); 
+  border-radius: 4px;
+  padding: 15px 16px;
+  background-color: transparent;
+  font-size: 16px;
+  line-height: 1.25;
+  color: rgba(255, 255, 255, 0.6);
+  &::placeholder {
+  font-size: 16px;
+  line-height: 1.25;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+}
+
+.footer-form-btn {
+  width: 200px;
+  height: 100%;
+  padding: 10px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: $accent-second-color;
+  background-color: $accent-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  transition: background-color $duration $timing-function;
+  &:hover, &:focus {
+  background-color:  #188ce8;
+}
+}
+

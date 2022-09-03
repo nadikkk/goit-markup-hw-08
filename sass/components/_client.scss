@@ -1,0 +1,25 @@
+.client-list {
+  display: flex;
+  column-gap: 30px;
+}
+.client-item {
+  width: calc((100% - 150px) / 6);
+  min-height: 92px;
+}
+.client-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  border: 1px solid $fill-color;
+  border-radius: 4px;
+  fill: $fill-color;
+  transition: border-color $duration $timing-function,
+    fill $duration $timing-function;
+  &:hover,
+  &:focus {
+  border-color: $accent-color;
+  fill: $accent-color;
+}  
+}

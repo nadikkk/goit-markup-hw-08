@@ -1,0 +1,84 @@
+.portfolio-btn {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  color: $primery-text-color;
+  background-color: $bgc-second;
+  padding: 6px 22px;
+  border-radius: 4px;
+  transition: color $duration $timing-function,
+    background-color $duration $timing-function,
+    box-shadow $duration $timing-function;
+  &:hover,
+  &:focus {
+  color: $accent-second-color;
+  background-color: $accent-color;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+}
+
+.list-btn {
+  display: flex;
+  column-gap: 8px;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.portfolio-item {
+  width: calc((100% - 60px) / 3);
+}
+.portfolio-box {
+  display: block;
+  transition: box-shadow $duration $timing-function;
+  &:hover,
+  &:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+}
+
+.box-wrap {
+  position: relative;
+  overflow: hidden;
+}
+.box-wrap-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(100%);
+  transition: transform $duration $timing-function;
+  width: 100%;
+  height: 100%;
+  padding: 63px 24px;
+  font-size: 18px;
+  line-height: 1.56;
+  color: $accent-second-color;
+  background: rgba(33, 150, 243, 0.9);
+  .portfolio-box:hover &,
+  .portfolio-box:focus & {
+  transform: translateY(0);
+}
+}
+
+.box-title {
+  padding: 20px 24px;
+  border: 1px solid #eeeeee;
+  border-top: none;
+}
+.portfolio-box-title {
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: $primery-text-color;
+  margin-bottom: 4px;
+}
+.portfolio-box-text {
+  font-size: 16px;
+  line-height: 1.88;
+  color: $second-text-color;
+}
