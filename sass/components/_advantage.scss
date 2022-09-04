@@ -1,12 +1,20 @@
 .advantage {
-  padding-bottom: 0;
+  @include desktop {
+  padding-bottom: 0;}
 }
 .advantage__list {
   display: flex;
-  column-gap: 30px;
+  gap: 30px;
+  flex-wrap: wrap;
 }
 .advantage__item {
-  width: calc((100% - 90px) / 4);
+  width: 100%;
+  @include tablet {
+    width: calc((100% - 30px) / 2);
+  }
+  @include desktop {
+    width: calc((100% - 90px) / 4);
+  }
 }
 .advantage__fon-icon {
   background-color: $bgc-second;
