@@ -38,23 +38,85 @@
             </li>
             <li><a class="header-nav link" href="">Контакти</a></li>
           </ul>
+          <button class="menu-open btn" type="button" data-menu-open>
+            <svg class="menu-open-icon" width="40" height="40">
+              <use href="./images/icons.svg#icon-menu"></use></svg>
+          </button>
         </nav>
         <ul class="header-link-list list">
           <li class="header-link-item">
             <a class="header-link link" href="mailto:info@devstudio.com"
               ><svg class="header-link-icon" width="16" height="12">
-                <use href="./images/icons.svg#icon-mail"></use></svg
-              >info@devstudio.com
+                <use href="./images/icons.svg#icon-mail"></use></svg>
+                info@devstudio.com
             </a>
           </li>
           <li class="header-link-item">
             <a class="header-link link" href="tel:+380961111111"
               ><svg class="header-link-icon" width="10" height="16">
-                <use href="./images/icons.svg#icon-tel"></use></svg
-              >+38 096 111 11 11
+                <use href="./images/icons.svg#icon-tel"></use></svg>
+                +38 096 111 11 11
             </a>
           </li>
         </ul>
+        <div class="mob-menu is-hidden" data-menu>
+          <button class="menu-close btn" type="button" data-menu-close>
+            <svg class="menu-close-icon" width="40" height="40">
+              <use href="./images/icons.svg#icon-menu-close"></use></svg>
+          </button>
+          <nav>
+            <ul class="mob-menu-item list">
+              <li>
+                <a class="mob-menu-link link" href="./index.html">Студія</a>
+              </li>
+              <li>
+                <a class="mob-menu-link link current" href="./portfolio.html"
+                  >Портфоліо</a
+                >
+              </li>
+              <li><a class="mob-menu-link link" href="">Контакти</a></li>
+            </ul>
+          </nav>
+          <div class="mob-menu-connect">
+            <ul class="mob-connect-list list">
+              <li class="mob-connect-item">
+                <a class="mob-connect-tel link" href="tel:+380961111111"
+                  >+38 096 111 11 11</a>
+              </li>
+              <li class="mob-connect-item">
+                <a class="mob-connect-mail link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a>
+              </li>
+            </ul>
+            <ul class="mob-cos list">
+              <li class="mob-cos-item">
+                <a href="" class="mob-cos-link link" 
+                  target="_blank" rel="noreferrer noopener nofollow">
+                  Instagram
+                </a>
+              </li>
+              <li class="mob-cos-item">
+                <a href="" class="mob-cos-link link"
+                  target="_blank" rel="noreferrer noopener nofollow">
+                  Twitter
+                </a>
+              </li>
+              <li class="mob-cos-item">
+                <a href="" class="mob-cos-link link"
+                  target="_blank" rel="noreferrer noopener nofollow">
+                  Facebook
+                </a>
+              </li>
+              <li class="mob-cos-item">
+                <a href="" class="mob-cos-link link"
+                  target="_blank" rel="noreferrer noopener nofollow">
+                  Linkedin
+                </a>
+              </li>
+            </ul>
+
+          </div>
+        </div>
       </div>
     </header>
     <main>
@@ -82,12 +144,29 @@
             <li class="portfolio-item">
               <a class="portfolio-box link" href="">
                 <div class="box-wrap">
-                  <img
-                    src="./images/portfolio1-desk.jpg"
-                    alt="Проект 1"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source 
+                    srcset="./images/portfolio1-desk.jpg 1x,
+                    ./images/portfolio1-desk@2x.jpg 2x"
+                    media="(min-width: 1200px)"
+                    /> 
+                    <source 
+                    srcset="./images/portfolio1-tab.jpg 1x,
+                    ./images/portfolio1-tab@2x.jpg 2x"
+                    media="(min-width: 768px)"
+                    /> 
+                    <source 
+                    srcset="./images/portfolio1-mob.jpg 1x,
+                    ./images/portfolio1-mob@2x.jpg 2x"
+                    media="(max-width: 1200px)"
+                    /> 
+                    <img
+                      src="./images/portfolio1-mob.jpg"
+                      alt="Проект 1"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
                   <p class="box-wrap-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -103,12 +182,29 @@
             <li class="portfolio-item">
               <a class="portfolio-box link" href="">
                 <div class="box-wrap">
-                  <img
-                    src="./images/portfolio2-desk.jpg"
-                    alt="Проект 2"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source 
+                    srcset="./images/portfolio2-desk.jpg 1x,
+                    ./images/portfolio2-desk@2x.jpg 2x"
+                    media="(min-width: 1200px)"
+                    /> 
+                    <source 
+                    srcset="./images/portfolio2-tab.jpg 1x,
+                    ./images/portfolio2-tab@2x.jpg 2x"
+                    media="(min-width: 768px)"
+                    /> 
+                    <source 
+                    srcset="./images/portfolio2-mob.jpg 1x,
+                    ./images/portfolio2-mob@2x.jpg 2x"
+                    media="(max-width: 1200px)"
+                    /> 
+                    <img
+                      src="./images/portfolio2-mob.jpg"
+                      alt="Проект 2"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
                   <p class="box-wrap-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -126,12 +222,29 @@
             <li class="portfolio-item">
               <a class="portfolio-box link" href="">
                 <div class="box-wrap">
-                  <img
-                    src="./images/portfolio3-desk.jpg"
-                    alt="Проект 3"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source 
+                    srcset="./images/portfolio3-desk.jpg 1x,
+                    ./images/portfolio3-desk@2x.jpg 2x"
+                    media="(min-width: 1200px)"
+                    /> 
+                    <source 
+                    srcset="./images/portfolio3-tab.jpg 1x,
+                    ./images/portfolio3-tab@2x.jpg 2x"
+                    media="(min-width: 768px)"
+                    /> 
+                    <source 
+                    srcset="./images/portfolio3-mob.jpg 1x,
+                    ./images/portfolio3-mob@2x.jpg 2x"
+                    media="(max-width: 1200px)"
+                    /> 
+                    <img
+                      src="./images/portfolio3-mob.jpg"
+                      alt="Проект 3"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
                   <p class="box-wrap-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -147,12 +260,29 @@
             <li class="portfolio-item">
               <a class="portfolio-box link" href="">
                 <div class="box-wrap">
-                  <img
-                    src="./images/portfolio4-desk.jpg"
-                    alt="Проект 4"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source 
+                    srcset="./images/portfolio4-desk.jpg 1x,
+                    ./images/portfolio4-desk@2x.jpg 2x"
+                    media="(min-width: 1200px)"
+                    /> 
+                    <source 
+                    srcset="./images/portfolio4-tab.jpg 1x,
+                    ./images/portfolio4-tab@2x.jpg 2x"
+                    media="(min-width: 768px)"
+                    /> 
+                    <source 
+                    srcset="./images/portfolio4-mob.jpg 1x,
+                    ./images/portfolio4-mob@2x.jpg 2x"
+                    media="(max-width: 1200px)"
+                    /> 
+                    <img
+                      src="./images/portfolio4-mob.jpg"
+                      alt="Проект 4"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
                   <p class="box-wrap-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -168,12 +298,29 @@
             <li class="portfolio-item">
               <a class="portfolio-box link" href="">
                 <div class="box-wrap">
-                  <img
-                    src="./images/portfolio5-desk.jpg"
-                    alt="Проект 5"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source 
+                    srcset="./images/portfolio5-desk.jpg 1x,
+                    ./images/portfolio5-desk@2x.jpg 2x"
+                    media="(min-width: 1200px)"
+                    /> 
+                    <source 
+                    srcset="./images/portfolio5-tab.jpg 1x,
+                    ./images/portfolio5-tab@2x.jpg 2x"
+                    media="(min-width: 768px)"
+                    /> 
+                    <source 
+                    srcset="./images/portfolio5-mob.jpg 1x,
+                    ./images/portfolio5-mob@2x.jpg 2x"
+                    media="(max-width: 1200px)"
+                    /> 
+                    <img
+                      src="./images/portfolio5-mob.jpg"
+                      alt="Проект 5"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
                   <p class="box-wrap-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -189,12 +336,29 @@
             <li class="portfolio-item">
               <a class="portfolio-box link" href="">
                 <div class="box-wrap">
-                  <img
-                    src="./images/portfolio6-desk.jpg"
-                    alt="Проект 6"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source 
+                    srcset="./images/portfolio6-desk.jpg 1x,
+                    ./images/portfolio6-desk@2x.jpg 2x"
+                    media="(min-width: 1200px)"
+                    /> 
+                    <source 
+                    srcset="./images/portfolio6-tab.jpg 1x,
+                    ./images/portfolio6-tab@2x.jpg 2x"
+                    media="(min-width: 768px)"
+                    /> 
+                    <source 
+                    srcset="./images/portfolio6-mob.jpg 1x,
+                    ./images/portfolio6-mob@2x.jpg 2x"
+                    media="(max-width: 1200px)"
+                    /> 
+                    <img
+                      src="./images/portfolio6-mob.jpg"
+                      alt="Проект 6"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
                   <p class="box-wrap-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -212,12 +376,29 @@
             <li class="portfolio-item">
               <a class="portfolio-box link" href="">
                 <div class="box-wrap">
-                  <img
-                    src="./images/portfolio7-desk.jpg"
-                    alt="Проект 7"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source 
+                    srcset="./images/portfolio7-desk.jpg 1x,
+                    ./images/portfolio7-desk@2x.jpg 2x"
+                    media="(min-width: 1200px)"
+                    /> 
+                    <source 
+                    srcset="./images/portfolio7-tab.jpg 1x,
+                    ./images/portfolio7-tab@2x.jpg 2x"
+                    media="(min-width: 768px)"
+                    /> 
+                    <source 
+                    srcset="./images/portfolio7-mob.jpg 1x,
+                    ./images/portfolio7-mob@2x.jpg 2x"
+                    media="(max-width: 1200px)"
+                    /> 
+                    <img
+                      src="./images/portfolio7-mob.jpg"
+                      alt="Проект 7"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
                   <p class="box-wrap-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -233,12 +414,29 @@
             <li class="portfolio-item">
               <a class="portfolio-box link" href="">
                 <div class="box-wrap">
-                  <img
-                    src="./images/portfolio8-desk.jpg"
-                    alt="Проект 8"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source 
+                    srcset="./images/portfolio8-desk.jpg 1x,
+                    ./images/portfolio8-desk@2x.jpg 2x"
+                    media="(min-width: 1200px)"
+                    /> 
+                    <source 
+                    srcset="./images/portfolio8-tab.jpg 1x,
+                    ./images/portfolio8-tab@2x.jpg 2x"
+                    media="(min-width: 768px)"
+                    /> 
+                    <source 
+                    srcset="./images/portfolio8-mob.jpg 1x,
+                    ./images/portfolio8-mob@2x.jpg 2x"
+                    media="(max-width: 1200px)"
+                    /> 
+                    <img
+                      src="./images/portfolio8-mob.jpg"
+                      alt="Проект 8"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
                   <p class="box-wrap-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -254,12 +452,29 @@
             <li class="portfolio-item">
               <a class="portfolio-box link" href="">
                 <div class="box-wrap">
-                  <img
-                    src="./images/portfolio9-desk.jpg"
-                    alt="Проект 9"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source 
+                    srcset="./images/portfolio9-desk.jpg 1x,
+                    ./images/portfolio9-desk@2x.jpg 2x"
+                    media="(min-width: 1200px)"
+                    /> 
+                    <source 
+                    srcset="./images/portfolio9-tab.jpg 1x,
+                    ./images/portfolio9-tab@2x.jpg 2x"
+                    media="(min-width: 768px)"
+                    /> 
+                    <source 
+                    srcset="./images/portfolio9-mob.jpg 1x,
+                    ./images/portfolio9-mob@2x.jpg 2x"
+                    media="(max-width: 1200px)"
+                    /> 
+                    <img
+                      src="./images/portfolio9-mob.jpg"
+                      alt="Проект 9"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
                   <p class="box-wrap-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу

@@ -21,8 +21,19 @@
 .list-btn {
   display: flex;
   column-gap: 8px;
-  justify-content: center;
-  margin-bottom: 50px;
+  justify-content: flex-start;
+  row-gap: 15px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+  @media screen and (min-width: 350px) and (max-width: 767px) {
+    width: 326px;
+  }
+  @include tablet {
+    margin-bottom: 30px;
+    justify-content: center;
+  }
+  @include desktop {
+  margin-bottom: 50px;}
 }
 .portfolio-list {
   display: flex;
@@ -30,7 +41,13 @@
   gap: 30px;
 }
 .portfolio-item {
-  width: calc((100% - 60px) / 3);
+  width: 100%;
+  @include tablet {
+    width: calc((100% - 30px) / 2);
+  }
+  @include desktop {
+    width: calc((100% - 60px) / 3);
+  }
 }
 .portfolio-box {
   display: block;

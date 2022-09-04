@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="./css/main.min.css">
   </head>
   <body>
-    <!-- <header class="header">
+    <header class="header">
       <div class="container header-box">
         <nav class="nav">
           <a class="logo" href="./index.html"
@@ -32,29 +32,93 @@
               <a class="header-nav link current" href="./index.html">Студія</a>
             </li>
             <li>
-              <a class="header-nav link" href="./portfolio.html">Портфоліо</a>
+              <a class="header-nav link" href="./portfolio.html"
+                >Портфоліо</a
+              >
             </li>
             <li><a class="header-nav link" href="">Контакти</a></li>
           </ul>
+          <button class="menu-open btn" type="button" data-menu-open>
+            <svg class="menu-open-icon" width="40" height="40">
+              <use href="./images/icons.svg#icon-menu"></use></svg>
+          </button>
         </nav>
         <ul class="header-link-list list">
           <li class="header-link-item">
             <a class="header-link link" href="mailto:info@devstudio.com"
               ><svg class="header-link-icon" width="16" height="12">
-                <use href="./images/icons.svg#icon-mail"></use>
-              </svg>info@devstudio.com
+                <use href="./images/icons.svg#icon-mail"></use></svg>
+                info@devstudio.com
             </a>
           </li>
           <li class="header-link-item">
             <a class="header-link link" href="tel:+380961111111"
               ><svg class="header-link-icon" width="10" height="16">
-                <use href="./images/icons.svg#icon-tel"></use>
-              </svg>+38 096 111 11 11
+                <use href="./images/icons.svg#icon-tel"></use></svg>
+                +38 096 111 11 11
             </a>
           </li>
         </ul>
+        <div class="mob-menu is-hidden" data-menu>
+          <button class="menu-close btn" type="button" data-menu-close>
+            <svg class="menu-close-icon" width="40" height="40">
+              <use href="./images/icons.svg#icon-menu-close"></use></svg>
+          </button>
+          <nav>
+            <ul class="mob-menu-item list">
+              <li>
+                <a class="mob-menu-link link current" href="./index.html">Студія</a>
+              </li>
+              <li>
+                <a class="mob-menu-link link" href="./portfolio.html"
+                  >Портфоліо</a
+                >
+              </li>
+              <li><a class="mob-menu-link link" href="">Контакти</a></li>
+            </ul>
+          </nav>
+          <div class="mob-menu-connect">
+            <ul class="mob-connect-list list">
+              <li class="mob-connect-item">
+                <a class="mob-connect-tel link" href="tel:+380961111111"
+                  >+38 096 111 11 11</a>
+              </li>
+              <li class="mob-connect-item">
+                <a class="mob-connect-mail link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a>
+              </li>
+            </ul>
+            <ul class="mob-cos list">
+              <li class="mob-cos-item">
+                <a href="" class="mob-cos-link link" 
+                  target="_blank" rel="noreferrer noopener nofollow">
+                  Instagram
+                </a>
+              </li>
+              <li class="mob-cos-item">
+                <a href="" class="mob-cos-link link"
+                  target="_blank" rel="noreferrer noopener nofollow">
+                  Twitter
+                </a>
+              </li>
+              <li class="mob-cos-item">
+                <a href="" class="mob-cos-link link"
+                  target="_blank" rel="noreferrer noopener nofollow">
+                  Facebook
+                </a>
+              </li>
+              <li class="mob-cos-item">
+                <a href="" class="mob-cos-link link"
+                  target="_blank" rel="noreferrer noopener nofollow">
+                  Linkedin
+                </a>
+              </li>
+            </ul>
+
+          </div>
+        </div>
       </div>
-    </header> -->
+    </header>
     <main>
       <!--hero-->
       <section class="hero section">
@@ -558,7 +622,7 @@
         </div>
       </section>
     </main>
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="container footer-box">
         <div class="footer-address">
           <a class="logo" href="./index.html"
@@ -654,7 +718,7 @@
           </form>
         </div>
       </div>  
-    </footer> -->
+    </footer>
     <!--modal -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
