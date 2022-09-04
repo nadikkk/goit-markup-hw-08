@@ -57,8 +57,11 @@
     background: $accent-color;
     border-radius: 2px;
     position: absolute;
-    bottom: -1px;
+    bottom: -2px;
     left: 0;
+    @include desktop {
+      bottom: -1px;
+    }
 }
 }
 .header-link-list {
