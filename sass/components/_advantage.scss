@@ -32,6 +32,10 @@
   line-height: 1.14;
   text-transform: uppercase;
   margin-bottom: 10px;
+  text-align: center;
+  @include tablet {
+    text-align: start;
+  }
 }
 .advantage__text {
   font-size: 14px;

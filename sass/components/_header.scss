@@ -39,6 +39,7 @@
 }
 .header-box {
   display: flex;
+  position: relative;
 }
 
 .header-nav {
@@ -134,11 +135,14 @@
   opacity: 1;
   visibility: visible;
   background-color: $bgc-primery;
-  padding: 48px 40px;
+  padding: 48px 30px;
   z-index: 1;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  @include mobile {
+    padding: 48px 40px;
+  }
   @include tablet {
     display: none;
   }
@@ -159,12 +163,14 @@
   line-height: 1.18;
   text-align: center;
   letter-spacing: 0.02em;
-  color: inherit}
-  .mob-menu-link.current {
+  color: inherit;
+  &.current {
     color: $accent-color;
     border-bottom: 4px solid $accent-color;
     border-radius: 4px;
   }
+}
+  
   .mob-connect-list {
     display: flex;
     flex-direction: column;
@@ -173,10 +179,13 @@
   }
   .mob-connect-tel{
     font-weight: 500;
-    font-size: 34px;
+    font-size: 24px;
     line-height: 1.18;
     letter-spacing: 0.02em;
     color: $accent-color;
+    @include mobile {
+      font-size: 34px;
+    }
   }
   .mob-connect-mail {
     font-weight: 500;
@@ -196,10 +205,12 @@
   }}
   .mob-cos-link {
     font-weight: 500;
-    font-size: 18px;
+    font-size: 10px;
     line-height: 1.22;
     letter-spacing: 0.02em;
     color: $accent-color;
-
+    @include mobile {
+      font-size: 18px;
+    }
   }
 
