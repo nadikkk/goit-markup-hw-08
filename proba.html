@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Студія</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.min.css">
+  </head>
+  <body>
+      <div class="vas">Vas</div>
+      <section class="proba section">
+        <div class="container">
+            <div class="vrap-gallery">
+              <img class="gallery-first"
+                srcset="./images/box1-desk.jpg 1x,
+                 ./images/box1-desk@2x.jpg 2x"
+                src="./images/box1-desk.jpg"
+                alt="Gallery foto 1"
+                width="370"
+                height="294"
+              />
+              <img class="gallery-second"
+                srcset="./images/box2-desk.jpg 1x,
+                 ./images/box2-desk@2x.jpg 2x"
+                src="./images/box2-desk.jpg"
+                alt="Gallery foto 2"
+                width="370"
+                height="294"
+              />
+              <img class="gallery-third"
+                srcset="./images/box3-desk.jpg 1x,
+                 ./images/box3-desk@2x.jpg 2x"
+                src="./images/box3-desk.jpg"
+                alt="Gallery foto 3"
+                width="370"
+                height="294"
+              />
+              </picture>
+            </div>
+              
+        
+      <!-- Swiper -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <img class="reviews"
+                srcset="./images/box2-desk.jpg 1x,
+                 ./images/box2-desk@2x.jpg 2x"
+                src="./images/box2-desk.jpg"
+                alt="Foto reviews 1"
+                width="85"
+                height="85"
+            />
+            <p class="reviews-text">I love visiting your cafe. You prepare the most delicious ice cream in Los Angeles! In addition, you have beautiful serving, cozy atmosphere and polite staff.
+
+            </p>
+            <p class="reviews-name">Emily, Los Angeles</p>
+
+        </div>
+        <div class="swiper-slide">Slide 2</div>
+        <div class="swiper-slide">Slide 3</div>
+        <div class="swiper-slide">Slide 4</div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+    </div>
+      </section>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+          renderBullet: function (index, className) {
+            return '<span class="' + className + '">' + (index + 1) + "</span>";
+          },
+        },
+      });
+    </script>
+  </body>
+</html>

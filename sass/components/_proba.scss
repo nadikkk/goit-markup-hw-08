@@ -1,0 +1,133 @@
+.proba {
+  padding-top: 0;
+}
+.vas {
+  width: 100%;
+  height: 200px;
+  background-color: aqua;
+}
+.vrap-gallery {
+  position: relative;
+  top: -40px;
+  width: 370px;
+  height: 200px;
+  margin: 0 auto;
+  border-radius: 7px;
+  overflow: hidden;
+  @include tablet {
+    border-radius: 18px;
+  }
+  @include desktop {
+    border-radius: 24px;
+  }
+}
+@keyframes galleryanimation {
+  0% {
+    opacity: 0;
+  }
+  12.12% {
+    opacity: 1;
+  }
+  35.35% {
+    opacity: 1;
+  }
+  45.45% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.vrap-gallery img {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  animation-name: galleryanimation;
+  animation-duration: 17s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.gallery-first {
+  animation-delay: 0s;
+}
+
+.gallery-second {
+  animation-delay: 6s;
+}
+
+.gallery-third {
+  animation-delay: 11s;
+}
+
+.swiper {
+  width: 100%;
+  
+}
+
+.reviews {
+  display: block;
+  width: 85px;
+  height: 85px;
+  margin: 32px auto;
+  border-radius: 50%;
+  overflow: hidden;
+
+}
+
+.reviews-text {
+  width: 280px;
+  padding: 34px 39px;
+  margin: 0 auto;
+ background: #84A178;
+border-radius: 24px;
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 255%;
+text-align: center;
+letter-spacing: 0.04em;
+color: #FCFCFC;
+@include tablet {
+  width: 705px;
+  font-weight: 500;
+font-size: 14px;
+line-height: 186%;
+padding: 29px 80px;
+}
+@include desktop {
+  width: 968px;
+  font-size: 16px;
+padding: 39px 74px;}
+}
+
+.reviews-name {
+ margin: 30px auto 24px;
+  font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 186%;
+text-align: center;
+color: #131313;
+@include tablet {
+  font-size: 16;
+  margin: 32px auto 42px;
+}
+}
+
+
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  color: transparent;
+  opacity: 1;
+  background: #D9D9D9;
+}
+
+.swiper-pagination-bullet-active {
+  background: #84A178;
+}
